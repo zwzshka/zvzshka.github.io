@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="#"><img src="img/logo.png" alt="logo"></a>
+            <div class="header__menu menu">
+                <div class="menu__icon">
+                    <span></span>
+                </div>
+                <nav class="menu__body">
+                    <ul>
+                        <li><a data-goto=".modal" href="#" class="menu__link">ABOUT COPERHOTHING</a></li>
+                        <li><a data-goto=".info" href="#" class="menu__link">OUR SHOP</a></li>
+                        <li><a data-goto=".accordion" href="#" class="menu__link">SOME INFOTMATION</a></li>
+                        <li class='last'><a data-goto=".accordion" href="#" class="menu__link">QUASTIONS</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="popup" id="popup">						
+    </div>
+
+    <div class="slider">
+        <div class="wrap">
+            <div class="slider-item fade">
+                <img src="img/main.png" alt="" />
+            </div>
+            <div class="slider-item fade">
+                <img src="img/слайдер.png" alt="" />
+            </div>
+            <div class="slider-item fade">
+                <img src="img/слайдер-2.png" alt="" />
+            </div>
+            <div class="prev">
+                <img src="img/1492790923-98arrow_84189.ico">
+            </div>
+            <div class="next">
+                <img src="img/btn.ico">
+            </div>
+        </div>
+        <div class="slider-dots">
+            <div class="dot dot-active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="modal-open">
+            <div class="row">
+                <img class="modal-open__img" src="img/Frame 1806.png" alt=""/>
+                <div class="text">
+                    <h1>ABOUT <span>COPENOTHING</span></h1>
+                    <p>Are you ready for COPE? Our team has worked hard to create a unique merch for pepe & pndc holders. All our products are manufactured using the most modern technologies and high-quality materials. They are not only stylish and unique, but also comfortable to use. We strive to provide our customers with a high level of satisfaction and joy from shopping.</p>
+                    <button id="open-modal__btn">TOKEN $PNDC</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <div class="row">
+                <div class="text">
+                    <h1>TOKEN<br><span>$PNDC</span></h1>
+                    <p>PNDC it's a token drived by early adopters of PEPE which according to the Pauly0x (founder) will change the game once and for all!</p>
+                    <button class="modal__close">IT'S CLEAR</button>
+                </div>
+                <img src="img/img.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info">
+            <div class="info-header">
+                <div class="info-header-tab active">SHOP</div>
+                <div class="info-header-tab">COPENOTHING</div>
+                <div class="info-header-tab">HOW TO BUY</div>
+                <div class="info-header-tab">TOKENS</div>
+            </div>
+            <div class="info-tabcontent">
+                <div class="text">
+                    <p>FOR YOU: CAPS, T-SHIRTS, SHIRTS, HOW TO BUY, TOKENS</p>
+                </div>
+            </div>
+            <div class="info-tabcontent">
+                <div class="text">
+                    <p>Are you ready for COPE? Our team has worked hard to create a unique merch for pepe & pndc holders. 
+                        All our products are manufactured using the most modern technologies and high-quality materials. 
+                        They are not only stylish and unique, but also comfortable to use. We strive to provide our customers 
+                        with a high level of satisfaction and joy from shopping.</p>
+                </div>
+            </div>
+            <div class="info-tabcontent">
+                <div class="text">
+                    <p>Select product<br>Add to cart<br>Checkout<br>Payment</p>
+                </div>
+            </div>
+            <div class="info-tabcontent">
+                <div class="text">
+                    <p>PNDC it's a token drived by early adopters of PEPE which according to the Pauly0x (founder) will change the game once and for all!<br>
+                    PEPE is a deflationary memecoin launched on Ethereum. The cryptocurrency was created as a tribute to the Pepe the Frog internet meme, 
+                    created by Matt Furie, which gained popularity in the early 2000s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="accordion" class="accordion">
+            <p class="accordion-head">TERMS OF SERVICE</p>
+            <div class="accordion-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <p class="accordion-head">PRIVACY POLICY</p>
+            <div class="accordion-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+            <p class="accordion-head">COPYRIGHT 2023 COPENOTHING. ALL RIGHTS RESERVED</p>
+            <div class="accordion-block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </div>
+        </div>
+        <img class="accord-img" src="img/Group 13.png" alt="">
+    </div>
+
+    <section class="container">
+        <div class="container1">
+          <div class="filter-ul">
+            <ul class="row">
+              <li data-f="all" class="year-2020">All</li>
+              <li data-f="CLOTHES" class="CLOTHES">CLOTHES</li>
+              <li data-f="ACCESSORIES" class="ACCESSORIES">ACCESSORIES</li>
+            </ul>
+          </div>
+          <div class="block-cover">
+            <div class="row">
+                <div class="box CLOTHES">
+                    <img src="img/cover-2.png">
+                    <span>T-SHIRTS</span>
+                </div>
+                <div class="box ACCESSORIES">
+                    <img src="img/cover.png">
+                    <span>CAPS</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="box CLOTHES">
+                    <img src="img/cover-2.png">
+                    <span>T-SHIRTS</span>
+                </div>
+                <div class="box ACCESSORIES">
+                    <img src="img/cover.png">
+                    <span>CAPS</span>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+
+    <script src="filter.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
